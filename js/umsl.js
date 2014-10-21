@@ -3,12 +3,15 @@
 jQuery (document).ready(function() {
 
 	
+
+	jQuery(".breadcrumb a:nth-child(2)").attr("id", "second-crumb-child");
 	jQuery(".breadcrumb a:nth-child(3)").attr("id", "third-crumb-child");
 	jQuery(".breadcrumb a:nth-child(4)").attr("id", "fourth-crumb-child");
 	jQuery(brandFunction);
 	jQuery(directoryButton);
 
 	jQuery("#breadcrumb").insertBefore("#block-block-25");
+	jQuery("#breadcrumb").css("display","inline");
 	jQuery(".islandora-large-image-metadata").insertAfter(".islandora-large-image-content-wrapper");
 	jQuery(".fieldset-wrapper").insertAfter(".islandora-large-image-content-wrapper");
 	jQuery(".islandora-solr-metadata-sidebar").hide();
@@ -23,7 +26,25 @@ jQuery (document).ready(function() {
 
 
 
-	jQuery(gridviewHide);			
+
+
+	jQuery(gridviewShow);			
+	
+
+
+
+
+
+	jQuery( '#darken').click(function () {
+		    jQuery(".directory").css("display", "none");  jQuery("#darken").css("display", "none");jQuery(".close").css("display", "none");jQuery(".close").insertAfter("section"); 
+		        });  
+	jQuery( '.close').click(function () {
+		     jQuery(".directory").css("display", "none");  jQuery("#darken").css("display", "inline"); jQuery(".close").fadeToggle(); jQuery(".close").insertAfter("#directory h3");
+	}); 
+
+
+
+	jQuery( ".directory" ).draggable();
 	
 
 
@@ -61,9 +82,11 @@ function brandFunction () {
             	}
 	    
 
-function gridviewHide () {
-			if (location.href != "http://dl.mospace.umsystem.edu/umsl/islandora/object/umsl%3Aroot"){
-					jQuery(".islandora-basic-collection-display-switch").css("display", "inline");
+function gridviewShow () {
+	
+		var gridshowCrumb = document.getElementById("second-crumb-child").textContent;
+			if (gridshowCrumb == "Collections") {
+						jQuery(".islandora-basic-collection-display-switch").css("display", "inline");
 				}
 			else {
 				
@@ -73,21 +96,26 @@ function directoryButton () {
 			var crumbCollection = document.getElementById("fourth-crumb-child").textContent;
 			
 			if (crumbCollection == "St. Louis Mercantile Library Special Collections") {	
-				jQuery("#mercdirectory").css("display", "none");
-				jQuery("#block-block-1").show();
-				jQuery("#block-block-1").click(function() {jQuery("#mercdirectory").slideToggle(); });	
+				jQuery("#block-block-1").css("display","inline");
+				jQuery("#block-block-2").css("display","none"); jQuery("#block-block-3").css("display","none");
+				jQuery("#block-block-1").click(function() {jQuery("#mercdirectory").css("display", "inline");  jQuery("#darken").css("display", "inline"); jQuery(".close").fadeToggle(); jQuery(".close").insertAfter("#mercdirectory h3");
+				});
 				}
 			else if (crumbCollection == "Pott Library Special Collections") {
-				jQuery("#pottdirectory").css("display", "none");
-				jQuery("#block-block-2").show();
-				jQuery("#block-block-2").click(function() {jQuery("#pottdirectory").slideToggle(); });	
+				jQuery("#block-block-2").css("display","inline");
+				jQuery("#block-block-1").css("display","none"); jQuery("#block-block-3").css("display","none");
+				jQuery("#block-block-2").click(function() {jQuery("#pottdirectory").css("display", "inline");  jQuery("#darken").css("display", "inline"); jQuery(".close").fadeToggle(); jQuery(".close").insertAfter("#pottdirectory h3");
+				});
 				}
 			else if (crumbCollection == "Barriger Library Special Collections") {
-				jQuery("#barrigerdirectory").css("display", "none");
-				jQuery("#block-block-3").show();
-				jQuery("#block-block-3").click(function() {jQuery("#barrigerdirectory").slideToggle(); });	
+				jQuery("#block-block-3").css("display","inline");
+				jQuery("#block-block-1").css("display","none"); jQuery("#block-block-2").css("display","none");
+				jQuery("#block-block-3").click(function() {jQuery("#barrigerdirectory").css("display", "inline");  jQuery("#darken").css("display", "inline"); jQuery(".close").fadeToggle(); jQuery(".close").insertAfter("#barrigerdirectory h3");
+				});
 				}
 			else {
+
+
 
 
 
