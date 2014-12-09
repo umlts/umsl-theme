@@ -240,6 +240,12 @@ a:hover { text-decoration:none; color:#EAAB00;}
 	visibility:hidden !important;
 	}
 
+#cboxLoadedContent .islandora-metadata .fieldset-wrapper dl dd p {
+	font-size:  16px; /*dd is the font inside the book reader metadata display on the right. the left is dt*/
+	line-height: 18px;
+	margin-top:0px;
+	}
+
 .BRfulltext {
 	max-height:75% !important;
 	height:75% !important;
@@ -279,6 +285,9 @@ div.BRfloatHead {
 	margin-left:auto;
 	margin-right:auto;
 	}
+.islandora-large-image-object > .fieldset-wrapper dl dd p {
+	margin-bottom:0px;
+	}
 
 .islandora-large-image-metadata dt {
 	text-align:left !important;
@@ -289,7 +298,7 @@ div.BRfloatHead {
 	border-top: 1px dashed blue !important;
 	}
 
-
+#clip { display:none;} /* This hides the image clip tool which seems broken */
 
 /*Featured*/
 #header {
@@ -571,26 +580,22 @@ scrollbar-thumb {
 	}
 
 #block-islandora-solr-sort h2 {
-	display:none;
+	
 	}
 
 #block-islandora-solr-sort ul {
-	list-style:none;
-	padding:0 0 0 0;
+	color:#ddd;
+
 	}
 
 #block-islandora-solr-sort ul a {
 	color:#ddd;
-	font-size:120%;
-	font-weight:bold;
+	font-size:100%;
 	}
 #block-islandora-solr-sort ul a:hover {
 	color:#eaab00;
 	}
 #block-islandora-solr-sort li {
-	padding:none;
-	padding-right:0px;
-	padding-top:0px;
 	}
 #block-islandora-solr-sort img {
 	border:none;
