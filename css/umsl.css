@@ -107,7 +107,7 @@ a:hover { text-decoration:none; color:#EAAB00;}
 .islandora-newspaper-content {
 	width:100% !important;
 	padding:3px !important;
-	background:black;
+	background:none;
 	border-radius:5px;
 	}
 
