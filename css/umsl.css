@@ -112,6 +112,12 @@ a:hover { text-decoration:none; color:#EAAB00;}
 	border:none;
 	}
 
+.collapsible.month {/*This is the dropdown box with the issue info under each month for newspapers*/
+	
+
+	}
+
+
 
 /* Internet Archive Book Viewer */
 
@@ -197,7 +203,7 @@ a:hover { text-decoration:none; color:#EAAB00;}
 	text-shadow: 0 0 0 black !important;
 	}
 
-#colorbox {
+#colorbox {     /*The colorbox is the main div for the pop-up metadata display*/
 	top:5% !important;
 	left:50% !important;
 	margin-left:-40% !important;
@@ -213,18 +219,27 @@ a:hover { text-decoration:none; color:#EAAB00;}
 	border-radius:10px;
 	box-shadow:1px 3px 10px black}
 
-#cboxWrapper {
-	max-height:80% !important;
+#cboxWrapper { /*The cboxWrapper holds the content and titlebar in the popup metadata display*/
+		max-height:95% !important;/*keeps a bit of padding at the bottom of the box*/
+		}
 
-	}
+#cboxWrapper div {
+	float:none !important;
+	max-height:100% !important;
+	} 
+
+
+#cboxTopLeft {display:none;} 
+#cboxTopCenter {display:none;} 
+#cboxTopRight {display:none;} /*empty fields that take up space*/
 
 #cboxContent {
 	width:100% !important;
-	height:100% !important;
 	max-height:100% !important;
 	border:none !important;
-	border-radius:0px !important;
-	box-shadow:none !important;}	
+	box-shadow:none !important;
+	float:none !important;
+	}	
 
 #cboxLoadedContent {
 	width: 98% !important;
@@ -233,12 +248,18 @@ a:hover { text-decoration:none; color:#EAAB00;}
 	}
 
 .islandora-metadata {
-	top:-3px !important;
+	margin:0px !important;
+	max-height:100% !important;
+	overflow-y:scroll !important
 	}
 
-.islandora-metadata legend {
+.islandora-metadata legend { /*hidden details tab that caused problems for large images*/
 	background-color:white !important;
 	visibility:hidden !important;
+	}
+
+.fieldset-wrapper { /*where the dl and dd fields show up*/
+	margin:0 0 0 0 !important;
 	}
 
 #cboxLoadedContent .islandora-metadata .fieldset-wrapper dl dd p {
