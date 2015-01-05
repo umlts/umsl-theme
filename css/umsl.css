@@ -114,7 +114,7 @@ a:hover { text-decoration:none; color:#EAAB00;}
 
 .collapsible.month {/*This is the dropdown box with the issue info under each month for newspapers*/
 	}
-.collapsible.month .fieldset-wrapper div {
+.collapsible.month .fieldset-wrapper  {
 	padding-top: 20px;
 	}
 
