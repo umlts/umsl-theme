@@ -210,16 +210,16 @@ a:hover { text-decoration:none; color:#EAAB00;}
 	
 	max-height:80% !important;
 	width:80% !important;
-	overflow:auto !important;
-	overflow-x:hidden !important;
-	overflow-y:auto !important;
+	overflow:hidden !important;
 	background:white !important;
 	border:1px solid #333;
 	border-radius:10px;
 	box-shadow:1px 3px 10px black}
 
 #cboxWrapper { /*The cboxWrapper holds the content and titlebar in the popup metadata display*/
-		max-height:95% !important;/*keeps a bit of padding at the bottom of the box*/
+		max-height:100% !important;/*keeps a bit of padding at the bottom of the box*/
+		overflow-x:hidden !important;
+		overflow-y:scroll !important;
 		}
 
 #cboxWrapper div {
@@ -249,7 +249,6 @@ a:hover { text-decoration:none; color:#EAAB00;}
 .islandora-metadata {
 	margin:0px !important;
 	max-height:100% !important;
-	overflow-y:scroll !important
 	}
 
 .islandora-metadata legend { /*hidden details tab that caused problems for large images*/
