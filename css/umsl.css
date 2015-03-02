@@ -285,14 +285,20 @@ div.BRfloatHead {
 	height: 75% !important;
 	}
 
+.textTop {
+	display:inline !important;
+	}
+
 .textLeft  {
 	padding:20px !important;
-	width:45% !important;
+	width:90% !important;
+	display:block !important;
 	}
 
 .textRight {
 	padding:20px !important;
-	width:45% !important;
+	width:90% !important;
+	display:block !important;
 	}
 
 .form-wrapper .fieldset-wrapper {
