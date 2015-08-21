@@ -658,6 +658,13 @@ scrollbar-thumb {
 	color:#ddd;
 	}
 
+/*page count block*/
+#islandora-basic-collection-object-count-block-count {
+	color: #eaab00;
+	background-color:none;
+	border:none;
+	
+	}
 
 
 /* Blcok Tweaks */
