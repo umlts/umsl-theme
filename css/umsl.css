@@ -922,3 +922,6 @@ bottom: 10px;
 	color:black !important;
 	text-align:center !important;
 	}
+
+/* Size pdf icon */
+#pdf-icon-image {width:25px;}
