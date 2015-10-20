@@ -7,10 +7,6 @@ stylesheets[all][] = css/umsl.css
 stylesheets[all][] = css/colors.css
 
 scripts[] = js/umsl.js
-scripts[] = js/jquery.ui.widget.js
-scripts[] = js/jquery.ui.mouse.js
-scripts[] = js/jquery.ui.core.js
-scripts[] = js/jquery.ui.draggable.js
 
 regions[header] = Header
 regions[help] = Help
