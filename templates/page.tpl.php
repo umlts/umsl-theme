@@ -192,6 +192,9 @@
           <?php print $title; ?>
           <?php print render($pdf_datastream); ?>
         </h1>
+			<div id="mods-owner">
+        <?php print render($islandora_object['location']['1']); ?>
+      </div>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php if ($tabs): ?>

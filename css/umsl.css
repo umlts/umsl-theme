@@ -925,3 +925,6 @@ bottom: 10px;
 
 /* Size pdf icon */
 #pdf-icon-image {width:25px;}
+
+/* hiding the mods owner */
+#mods-owner {display:none;}
