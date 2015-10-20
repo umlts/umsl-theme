@@ -25,20 +25,14 @@ else if  (modsOwner.indexOf("Pott")>=0) { jQuery("#block-block-25").append("<div
 else if  (modsOwner.indexOf("Barriger")>=0) { jQuery("#block-block-25").append("<div class='banner'><h1>John W. Barriger III National Railroad Library</h1></div>"); }
 else if  (modsOwner.indexOf("Art")>=0) { jQuery("#block-block-25").append("<div class='banner'><h1>St. Louis Mercantile Library Art Museum</h1></div>");}
 else if  (modsOwner.indexOf("Jefferson")>=0) { jQuery("#block-block-25").append("<div class='banner'><h1>Thomas Jefferson Library</h1></div>"); }
-else if  (modsOwner.indexOf("Archives")>=0) { jQuery("block-block-25").append("<div class='banner'><h1>University Archives</h1></div>"); }
-else{}
+else if  (modsOwner.indexOf("Archives")>=0) { jQuery("#block-block-25").append("<div class='banner'><h1>University Archives</h1></div>"); }
+else if  (modsOwner.indexOf("UMSL")>=0) { 
+			jQuery("#block-block-25").append("<div class='banner'><h1>Digital Collections at the University of Missouri-St. Louis</h1></div>");
+			jQuery("#page-title").css("display","none");
+			}
+else{  }
 };
 
 	    
-
-function gridviewShow () {
-	
-		var gridshowCrumb = document.getElementById("second-crumb-child").textContent;
-			if (gridshowCrumb == "Collections") {
-						jQuery(".islandora-basic-collection-display-switch").css("display", "inline");
-				}
-			else {
-				
-				}}
 
 
