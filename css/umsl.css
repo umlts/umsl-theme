@@ -56,9 +56,14 @@ a:hover { text-decoration:none; color:#EAAB00;}
 	display:inline;
 	}
 
-.banner a:hover {
-	text-decoration:none;
-	}
+.banner a:hover {text-decoration:none;	}
+.banner a:active {text-decoration:none; }
+.banner a:visited {text-decoration:none;}
+
+.banner a h1 {text-decoration:none; color:#ddd;}
+.banner a h1:visited {text-decoration:none; color:#ddd;}
+.banner a h1:active {text-decoration:none; color:#ddd;}
+.banner a h1:hover { color:#EAAB00;}
 
 #block-block-25 .content {	margin-top:0px;	}
 #block-block-1 .content {	margin-top:0px; }
