@@ -1,9 +1,18 @@
 
 a {	text-decoration:none;}
 a:hover { text-decoration:none; color:#EAAB00;}
+a, img { border:none; outline:none;}
+
+
+/*These are for object thumbnails*/
+.islandora-object-thumb img {max-width:100px; border-radius:4px;box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);}
+.solr-thumb img {max-width:100px; border-radius:4px; box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);}
+
+
 
 #page-wrapper {background: #fff;}
 
+/*black and gold tabs*/
 #main-menu-links a {
     background: #EAAB00;
 	text-shadow: 0px 0px #eee;
@@ -20,6 +29,8 @@ a:hover { text-decoration:none; color:#EAAB00;}
 	color: #fff;
 	text-shadow: 0px 0px #fff;
 	font-weight:normal;
+	border:none;
+	outline:none;
 	}
 
 .islandora-basic-collection-display-switch {
@@ -60,9 +71,9 @@ a:hover { text-decoration:none; color:#EAAB00;}
 .banner a:active {text-decoration:none; }
 .banner a:visited {text-decoration:none;}
 
-.banner a h1 {text-decoration:none; color:#ddd;}
-.banner a h1:visited {text-decoration:none; color:#ddd;}
-.banner a h1:active {text-decoration:none; color:#ddd;}
+.banner a h1 {text-decoration:none; color:#fff;}
+.banner a h1:visited {text-decoration:none; color:#fff;}
+.banner a h1:active {text-decoration:none; color:#fff;}
 .banner a h1:hover { color:#EAAB00;}
 
 #block-block-25 .content {	margin-top:0px;	}
@@ -378,6 +389,7 @@ div.BRfloatHead {
 	margin:0 0 0 0;
 	background: #333;
 	padding:5px 5px 5px 5px;
+	border-bottom:1px solid #333;
 	}
 #featured h2 {
 	visibility: hidden;
@@ -409,6 +421,8 @@ div.BRfloatHead {
 	margin-left:auto;
 	margin-right:auto;
 	}
+
+.featured #messages {background:#333;}
 
 /* home page */
 /* Slideshow */
@@ -603,7 +617,7 @@ scrollbar-thumb {
 	}	
 
 #block-islandora-solr-sort {
-	background:#555;
+	background:#333;
 	padding:15px 0 15px 15px;
 	}
 #block-islandora-solr-sort .content {
@@ -634,7 +648,7 @@ scrollbar-thumb {
 	}
 
 #block-islandora-solr-basic-facets {
-	background: linear-gradient(#555, #333);
+	background: #333; 
 	border-radius: 5px;
 	border:0.5px solid black;
 	}
@@ -662,6 +676,9 @@ scrollbar-thumb {
 #block-islandora-solr-basic-facets .count {
 	color:#ddd;
 	}
+/*search results*/
+dl.solr-fields {border-top:2px ridge #981E32;}
+.solr-fields dt, .solr-fields dd {border-top: 1px solid #981E32;}
 
 /*page count block*/
 #islandora-basic-collection-object-count-block-count {

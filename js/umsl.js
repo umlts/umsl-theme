@@ -11,7 +11,6 @@ jQuery (document).ready(function() {
 	jQuery(".islandora-large-image-metadata").insertAfter(".islandora-large-image-content-wrapper");
 	jQuery(".fieldset-wrapper").insertAfter(".islandora-large-image-content-wrapper");
 	jQuery(".islandora-solr-metadata-sidebar").hide();		
-	jQuery(".umsl-2632").parent().insertBefore(".umsl-2633");
 	jQuery("#messages").insertAfter("#featured");
 
 
@@ -29,6 +28,9 @@ else if  (modsOwner.indexOf("Archives")>=0) { jQuery("#block-block-25").append("
 else if  (modsOwner.indexOf("UMSL")>=0) { 
 			jQuery("#block-block-25").append("<div class='banner'><h1>Digital Collections at the University of Missouri-St. Louis</h1></div>");
 			jQuery("#page-title").css("display","none");
+			jQuery("#sidebar-first").css("display","none");
+			jQuery("#sidebar-first").css("width","0px");
+			jQuery("#content").css("width","960px");
 			}
 else{  }
 };
