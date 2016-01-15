@@ -134,6 +134,17 @@ a, img { border:none; outline:none;}
 	padding-top: 20px;
 	}
 
+#newspaper-thumb {float:left; width:220px;}
+#newspaper-thumb img {
+	max-width:200px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 3px 0px #333;
+	display:inline;
+	margin-right:20px;	
+	}
+#newspaper-description {float:left;width:710px; margin-bottom:10px; }
+#collection-description {margin-bottom:10px;}
+
 /* Internet Archive Book Viewer */
 
 
