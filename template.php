@@ -6,10 +6,13 @@
 function umsl_theme_preprocess_page(&$variables) {
 // Only if an islandora object
   if ($islandora_object = menu_get_object('islandora_object', 2)) {
+    $metadata = "";
     $temp_array = array(); 
     $pid = $islandora_object->id;
     $object_url = '/islandora/object/' . $pid;
-    $metadata = $islandora_object['MODS']->content;
+    if (!empty($islandora_object['MODS']->content)) {
+      $metadata = $islandora_object['MODS']->content;
+    }
     $thumbnail_img = '<img src="' . $GLOBALS['base_url'] . $object_url . '/datastream/TN/view"' . '/>';
 // Title from mods
     if (preg_match("/<physicalLocation>([^<>]*)<\/physicalLocation>/", $metadata, $location) || preg_match("/<mods:physicalLocation>([^<>]*)<\/mods:physicalLocation>/", $metadata, $location)) {
